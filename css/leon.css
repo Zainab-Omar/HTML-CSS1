@@ -10,18 +10,11 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-.parent{
-    background-color: #eee;
-
-}
-
 .container{
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
-    margin-left: auto;
-    background-color: red;
-   
+    margin-left: auto;  
 }
 
 /* small screen */
@@ -44,3 +37,52 @@ body {
         width: 1170px;
     }
 }
+
+/* end global rules */
+
+/* start header */
+.header{
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+.header .links{
+    position: relative;
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #222;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span:first-child{
+    width: 100%;
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+.header .links .icon span:last-child{
+    width: 100%;
+}
+
+/* end header */
