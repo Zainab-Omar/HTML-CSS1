@@ -9,3 +9,38 @@
 body {
     font-family: "Work Sans", sans-serif;
 }
+
+.parent{
+    background-color: #eee;
+
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: red;
+   
+}
+
+/* small screen */
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screen */
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screen */
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
